@@ -288,6 +288,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdsi_netctrl \
     libengmode_client \
+    libexifa.camera.samsung \
     libformatConverter.unifunc \
     libhandgesture.arcsoft \
     libhdr_tm \
