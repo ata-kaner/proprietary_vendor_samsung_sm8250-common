@@ -233,6 +233,7 @@ PRODUCT_PACKAGES += \
     android.hardware.bluetooth@1.0-impl-qti \
     android.hardware.gatekeeper@1.0-impl-qti \
     camera.qcom \
+    camera.unihal.default \
     gatekeeper.mdfpp \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
@@ -287,6 +288,7 @@ PRODUCT_PACKAGES += \
     libdpps \
     libdsi_netctrl \
     libengmode_client \
+    libformatConverter.unifunc \
     libhandgesture.arcsoft \
     libhdr_tm \
     libhexagon_nn_stub \
@@ -296,8 +298,10 @@ PRODUCT_PACKAGES += \
     libhypermotion_interface \
     libimage_enhancement.arcsoft \
     libimagecodec_native.quram \
+    libimgproc_sw.unifunc \
     libipebpsstriping \
     libjpegQtable_interface \
+    libjpegencoder_sw.unifunc \
     libkeymaster_helper \
     libkeymasterdeviceutils \
     libkeymasterutils \
@@ -328,6 +332,7 @@ PRODUCT_PACKAGES += \
     libqseed3 \
     libqtikeymaster4 \
     libsavscmn \
+    libscaler_hw.unifunc \
     libscveCommon \
     libscveCommon_stub \
     libscveObjectSegmentation \
@@ -361,6 +366,7 @@ PRODUCT_PACKAGES += \
     libsns_low_lat_stream_stub \
     libsnsapi \
     libsnsdiaglog \
+    libsocial_image_enhancement.uniplugin@1.0 \
     libspcom \
     libssc \
     libssc_default_listener \
@@ -376,6 +382,7 @@ PRODUCT_PACKAGES += \
     libuniplugin \
     libvdis_core \
     libvideobeauty.arcsoft \
+    libvideobeauty.uniplugin@1.0 \
     libvideobeauty_interface \
     libvideotransitioneffect_roll.arcsoft \
     libvideotransitioneffect_zoom.arcsoft \
@@ -384,6 +391,9 @@ PRODUCT_PACKAGES += \
     libvpphcp \
     libvpphvx \
     libvpplibrary \
+    unihal_cutils@2.1 \
+    unihal_main@2.1 \
+    unihal_uniplugin@1.0 \
     unnhal-acc-adreno \
     unnhal-acc-common \
     unnhal-acc-hta \
