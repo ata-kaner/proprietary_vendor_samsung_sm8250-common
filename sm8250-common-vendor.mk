@@ -6,6 +6,12 @@ PRODUCT_SOONG_NAMESPACES += \
     vendor/samsung/sm8250-common
 
 PRODUCT_COPY_FILES += \
+    vendor/samsung/sm8250-common/proprietary/system/cameradata/portrait_data/SRIB_Acenet_FP16_V008.snf:$(TARGET_COPY_OUT_SYSTEM)/cameradata/portrait_data/SRIB_Acenet_FP16_V008.snf \
+    vendor/samsung/sm8250-common/proprietary/system/cameradata/portrait_data/SRIB_HumanSegVideoLite_INT8_V101_sm8250_snpe1395.dlc:$(TARGET_COPY_OUT_SYSTEM)/cameradata/portrait_data/SRIB_HumanSegVideoLite_INT8_V101_sm8250_snpe1395.dlc \
+    vendor/samsung/sm8250-common/proprietary/system/cameradata/portrait_data/SRIB_Matting_INT8_V005.dlc:$(TARGET_COPY_OUT_SYSTEM)/cameradata/portrait_data/SRIB_Matting_INT8_V005.dlc \
+    vendor/samsung/sm8250-common/proprietary/system/cameradata/portrait_data/SRIB_SID_FP16_V014.caffemodel:$(TARGET_COPY_OUT_SYSTEM)/cameradata/portrait_data/SRIB_SID_FP16_V014.caffemodel \
+    vendor/samsung/sm8250-common/proprietary/system/cameradata/portrait_data/single_bokeh_feature.json:$(TARGET_COPY_OUT_SYSTEM)/cameradata/portrait_data/single_bokeh_feature.json \
+    vendor/samsung/sm8250-common/proprietary/system/etc/permissions/sec_camerax_service.xml:$(TARGET_COPY_OUT_SYSTEM)/etc/permissions/sec_camerax_service.xml \
     vendor/samsung/sm8250-common/proprietary/system_ext/etc/permissions/audiosphere.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/audiosphere.xml \
     vendor/samsung/sm8250-common/proprietary/system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml:$(TARGET_COPY_OUT_SYSTEM_EXT)/etc/permissions/com.android.hotwordenrollment.common.util.xml \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/audio_tuning_mixer.txt:$(TARGET_COPY_OUT_VENDOR)/etc/audio_tuning_mixer.txt \
@@ -41,6 +47,7 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.qti.media.c2@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.media.c2@1.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.qti.rmt_storage.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.rmt_storage.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.qti.tftp.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.qti.tftp.rc \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.snap-default.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.snap-default.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.samsung.hardware.thermal@1.0-service.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/init/vendor.sensors.sscrpcd.rc:$(TARGET_COPY_OUT_VENDOR)/etc/init/vendor.sensors.sscrpcd.rc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/locale/plmn_delta_eng.bin:$(TARGET_COPY_OUT_VENDOR)/etc/locale/plmn_delta_eng.bin \
@@ -56,11 +63,14 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/plmn_delta_hktw.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_hktw.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/plmn_delta_usagsm.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_delta_usagsm.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/plmn_se13.bin:$(TARGET_COPY_OUT_VENDOR)/etc/plmn_se13.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/portrait_data/SRIB_HumanSegVideoLite_INT8_V101_sm8250_snpe1395_vendor.dlc:$(TARGET_COPY_OUT_VENDOR)/etc/portrait_data/SRIB_HumanSegVideoLite_INT8_V101_sm8250_snpe1395_vendor.dlc \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/sec_config:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/sec_config_oem:$(TARGET_COPY_OUT_VENDOR)/etc/sec_config_oem \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.base-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.base-arm.policy \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/seccomp_policy/codec2.vendor.ext-arm.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/codec2.vendor.ext-arm.policy \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/seccomp_policy/vendor.qti.hardware.dsp.policy:$(TARGET_COPY_OUT_VENDOR)/etc/seccomp_policy/vendor.qti.hardware.dsp.policy \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/snap_gpu_kernel_64.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snap_gpu_kernel_64.bin \
+    vendor/samsung/sm8250-common/proprietary/vendor/etc/snaplite_cache.bin:$(TARGET_COPY_OUT_VENDOR)/etc/snaplite_cache.bin \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/ssg/ta_config.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/ta_config.json \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/ssg/tz_whitelist.json:$(TARGET_COPY_OUT_VENDOR)/etc/ssg/tz_whitelist.json \
     vendor/samsung/sm8250-common/proprietary/vendor/etc/thermal-engine.conf:$(TARGET_COPY_OUT_VENDOR)/etc/thermal-engine.conf \
@@ -97,6 +107,40 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/sm8250-common/proprietary/vendor/lib64/camera/w_tof_calibration.bin:$(TARGET_COPY_OUT_VENDOR)/lib64/camera/w_tof_calibration.bin
 
 PRODUCT_PACKAGES += \
+    libAIQSolution_MPI.camera.samsung \
+    libBeauty_v4.camera.samsung_system \
+    libFaceRestoration.camera.samsung \
+    libFace_Landmark_API.camera.samsung_system \
+    libHprFace_GAE_api.camera.samsung_system \
+    libHpr_RecGAE_cvFeature_v1.0.camera.samsung_system \
+    libLocalTM_pcc.camera.samsung \
+    libMultiFrameProcessing30.camera.samsung \
+    libMultiFrameProcessing30.snapwrapper.camera.samsung \
+    libMultiFrameProcessing30Tuning.camera.samsung \
+    libOpenCv.camera.samsung_system \
+    libPortraitSolution.camera.samsung \
+    libSwIsp_core.camera.samsung \
+    libSwIsp_wrapper_v1.camera.samsung \
+    libbeautyshot.arcsoft_system \
+    libcore2nativeutil.camera.samsung \
+    libexifa.camera.samsung_system \
+    libface_landmark.arcsoft \
+    libfacialrestoration.arcsoft \
+    libhigh_dynamic_range.arcsoft \
+    libhumantracking.arcsoft \
+    libimage_enhancement.arcsoft_system \
+    libimagecodec.quram \
+    libjpega.camera.samsung \
+    libjpegsq.media.samsung \
+    liblow_light_hdr.arcsoft \
+    libmpbase_system \
+    libpadm_system \
+    libsavscmn_system \
+    libsnap_aidl.snap.samsung \
+    libsrib_CNNInterface.camera.samsung \
+    libsrib_humanaware_engine.camera.samsung \
+    libveengine.arcsoft \
+    vendor.samsung.hardware.snap-V1-ndk \
     eglSubDriverAndroid \
     libEGL_adreno \
     libGLESv1_CM_adreno \
@@ -237,9 +281,16 @@ PRODUCT_PACKAGES += \
     gatekeeper.mdfpp \
     vendor.qti.hardware.capabilityconfigstore@1.0-impl \
     vendor.qti.hardware.qteeconnector@1.0-impl \
+    libBeauty_v4.camera.samsung \
     libDepthBokehVideo_interface \
+    libDualCamBokehCapture.camera.samsung \
+    libFace_Landmark_API.camera.samsung \
     libGPQTEEC_vendor \
     libGPTEE_vendor \
+    libHprFace_GAE_api.camera.samsung \
+    libHpr_RecGAE_cvFeature_v1.0.camera.samsung \
+    libLocalTM_capture_core.camera.samsung \
+    libLocalTM_wrapper.camera.samsung \
     libQTEEConnector_vendor \
     libSNPE \
     libSecC2ComponentStore \
@@ -253,6 +304,7 @@ PRODUCT_PACKAGES += \
     libarcsoft_aieffectpk_video_bokeh \
     libarcsoft_aieffectpk_video_plight \
     libarcsoft_deflicker_native \
+    libarcsoft_dualcam_portraitlighting \
     libarcsoft_multi_frame_video_hdr \
     libarcsoft_object_tracking \
     libarcsoft_superresolution_bokeh \
@@ -287,12 +339,14 @@ PRODUCT_PACKAGES += \
     libdisplayskuutils \
     libdpps \
     libdsi_netctrl \
+    libdualcam_refocus_image \
     libengmode_client \
     libexifa.camera.samsung \
     libformatConverter.unifunc \
     libhandgesture.arcsoft \
     libhdr_tm \
     libhexagon_nn_stub \
+    libhigh_dynamic_range_bokeh \
     libhta \
     libhta_hexagon_runtime \
     libhypermotion_core \
@@ -357,6 +411,7 @@ PRODUCT_PACKAGES += \
     libsmartfocus_interface \
     libsnap_compute \
     libsnap_compute_wrapper \
+    libsnap_v1.samsung \
     libsnap_vndk \
     libsnaplite_native \
     libsnaplite_wrapper \
@@ -422,6 +477,7 @@ PRODUCT_PACKAGES += \
     vendor.samsung.hardware.bluetooth@2.0 \
     vendor.samsung.hardware.radio-V1-ndk \
     vendor.samsung.hardware.radio.channel-V1-ndk \
+    vendor.samsung.hardware.snap-V1-ndk_platform \
     vendor.samsung.hardware.thermal@1.0 \
     vendor_lib_rfsa_adsp_capi_v2_aptX_CLHDAD_Encoder_so \
     vendor_lib_rfsa_adsp_libQ6MSFR_manager_skel_so \
@@ -439,9 +495,11 @@ PRODUCT_PACKAGES += \
     vendor_lib_rfsa_adsp_libsnpe_dsp_v66_domains_v2_skel_so \
     vendor_lib_rfsa_adsp_libsns_device_mode_skel_so \
     vendor_lib_rfsa_adsp_libsns_low_lat_stream_skel_so \
+    sec_camerax_service \
     TimeService \
     HotwordEnrollmentOKGoogleEx3HEXAGON \
     HotwordEnrollmentXGoogleEx3HEXAGON \
+    sec_camerax_impl \
     audiosphere \
     com.android.hotwordenrollment.common.util \
     android.hardware.neuralnetworks@1.3-service-qti-hta.xml \
@@ -468,6 +526,7 @@ PRODUCT_PACKAGES += \
     vendor.qti.hardware.qteeconnector@1.0-service \
     vendor.qti.hardware.tui_comm@1.0-service-qti \
     vendor.qti.media.c2@1.0-service \
+    vendor.samsung.hardware.snap-service \
     vendor.samsung.hardware.thermal@1.0-service \
     init.qti.chg_policy \
     init.qti.qcv \

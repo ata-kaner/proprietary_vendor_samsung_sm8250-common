@@ -1,0 +1,5 @@
+service snapaidl /vendor/bin/hw/vendor.samsung.hardware.snap-service
+    interface aidl vendor.samsung.hardware.snap.ISehSnap/secsnap
+    class hal
+    user system
+    group system
